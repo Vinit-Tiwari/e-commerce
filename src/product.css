@@ -1,0 +1,92 @@
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+
+.img{
+    width: 15rem;
+    height: auto;
+}
+.product-desc{
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    flex-direction: row;
+    gap: 9rem;
+    padding: 5rem;
+}
+.price p:last-child{
+    text-decoration: none;
+    opacity: 1;
+    color:darkslategray;
+}
+.original{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.footer{
+    justify-content: space-between;
+    user-select: none;
+    gap: 1rem;
+}
+
+
+.atc-1 {
+    min-width: 6rem;
+    width: 50%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.5s all;
+    border: 1px solid black;
+}
+
+.added{
+    background-color: black;
+    color: white;
+}
+.counter{
+    border: 1px solid black;
+    gap: 2rem;
+    border-radius: 0.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.counter p{
+    width: 1.5rem;
+    text-align: center;
+}
+.minus{
+    background: url("/public/icon-minus.svg") no-repeat;
+    width: 2rem;
+    height:2rem;
+    padding: 0 1.5rem;
+    background-position: center;
+    border-right: 1px solid black;
+}
+.add{
+    background: url("/public/icon-plus.svg") no-repeat;
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    padding: 0 1.5rem;
+    border-left: 1px solid black;
+}
+.add:hover,.minus:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.3);
+}

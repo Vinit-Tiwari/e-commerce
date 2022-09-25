@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    max-width: 18rem;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    height: 20rem;
+    align-self: center;
+    margin: auto;
+}
+
+.price{
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.price p:first-child{
+    font-size: 1.2rem;
+}
+
+.price p:last-child{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.title{
+    font-size: 1.2rem;
+    letter-spacing: 0.9px;
+}
+.author{
+    font-size: 0.9rem;
+}
+.names{
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+}
+.atc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s all;
+    border: 1px solid black;
+    user-select: none;
+}
+.atc:hover{
+    background-color: black;
+    color: white;
+}

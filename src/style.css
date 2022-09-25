@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid white ;
+    width: 80vw;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.part-1{
+    width: 40vw;
+    justify-content: space-between;
+}
+.part-2{
+    width: 8vw;
+    justify-content: space-between;
+}
+
+.options{
+    width: 30vw;
+    justify-content: space-evenly;
+}
+
+.options p{
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    width: fit-content;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: 0.3s ease-in-out all;
+}
+.options p:hover{
+    opacity: 1;
+}
+
+.options p::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    transform-origin: center;
+    transition: 0.3s ease-in-out all;
+}
+
+.options p:hover:before{
+    content: "";
+    position: absolute;
+    width:100%;
+    top: 95%;
+    opacity: 1;
+    height: 0.1rem;
+    transition: 0.3s all;
+    background-color: red;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 80vw;
+    height: 0.1rem;
+    margin-top: 5rem;
+}
+
+.cart{
+    background: url("/public/icon-cart.svg") no-repeat;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+}
+.profile{
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url("/public/profile.svg");
+    transition: 0.1s all ease-in-out;
+}
+.profile:hover{
+    border: 2px solid black;
+}
+.cart::before{
+    content: '1';
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 80%;
+    top: -30%;
+    color: white;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    padding: 3rem 1rem;
+    gap: 2rem;
+}
+
+.product{
+    display: flex;
+    width: 70vw;
+}
